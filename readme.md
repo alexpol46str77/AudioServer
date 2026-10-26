@@ -28,8 +28,8 @@ podman run -d --name audiophile_postgres -p 5432:5432 -v audioserver_pgdata:/var
 ### 2. Настройка окружения на Windows
 Создайте в корне проекта файл `.env`:
 ```text
-DB_USER=audio_admin
-DB_PASS=plex123
+DB_USER=********
+DB_PASS=********
 DB_NAME=audiophile_db
 DB_HOST=192.168.0.106
 DB_PORT=5432
