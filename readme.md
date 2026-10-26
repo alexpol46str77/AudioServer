@@ -28,11 +28,13 @@ podman run -d --name audiophile_postgres -p 5432:5432 -v audioserver_pgdata:/var
 ### 2. Настройка окружения на Windows
 Создайте в корне проекта файл `.env`:
 
+'''text
 DB_USER=your_database_user
 DB_PASS=your_secure_password
 DB_NAME=your_database_name
 DB_HOST=192.168.0.106
 DB_PORT=5432
+'''
 
 
 ### 3. Запуск Backend-сервера (FastAPI)
