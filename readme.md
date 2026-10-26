@@ -21,19 +21,19 @@
 
 ### 1. Подготовка Базы Данных (Linux Mint / Podman)
 Запустите контейнер СУБД с пробросом портов и постоянным хранилищем:
-```bash
+
 podman run -d --name audiophile_postgres -p 5432:5432 -v audioserver_pgdata:/var/lib/postgresql/data mirror.gcr.io/library/postgres:16-alpine
-```
+
 
 ### 2. Настройка окружения на Windows
 Создайте в корне проекта файл `.env`:
-```text
-DB_USER=********
-DB_PASS=********
-DB_NAME=audiophile_db
+
+DB_USER=your_database_user
+DB_PASS=your_secure_password
+DB_NAME=your_database_name
 DB_HOST=192.168.0.106
 DB_PORT=5432
-```
+
 
 ### 3. Запуск Backend-сервера (FastAPI)
 ```powershell
